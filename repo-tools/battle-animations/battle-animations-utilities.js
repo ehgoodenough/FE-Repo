@@ -20,6 +20,15 @@ const escapeParens = (string) => string.replace(/(?=[()\[\]])/g, '\\')
 
 const DOWNLOAD_BUTTON = "![Download](https://img.shields.io/badge/Download--red?style=social&logo=github)"
 
+
+//
+//
+//
+// README
+//
+//
+//
+
 /**
  * Given anim and weapon objects, generates the README text for an anim weapon folder.
  *
@@ -42,6 +51,18 @@ const makeWeaponReadmeText = ({anim, weapon, path}) => (
 ${anim.credits}
 `
 )
+
+
+
+
+
+//
+//
+//
+// UNIT PAGE
+//
+//
+//
 
 /**
  * Given anim and weapon objects, generates the README text for an anim weapon folder.
@@ -129,6 +150,16 @@ const makeWeaponContent = ({weapon, currentDir}) => {
     return content
 }
 
+
+
+//
+//
+//
+// CATEGORY
+//
+//
+//
+
 /**
  * Given anim objects from a specific dir, generates the README text for a category folder.
  * Intentionally does not include credits, but links to the specific anim dir that does.
@@ -164,6 +195,15 @@ ${contents}
 `) // HERE - entire categories of animations
 }
 
+
+//
+//
+//
+// INDEX
+//
+//
+//
+
 /**
  * Given anim objects from a specific dir, generates the README text for a category folder.
  * Intentionally does not include credits, but links to the specific anim dir that does.
@@ -188,6 +228,20 @@ const makeRootReadmeText = (allAnims, currentDir='./', headingDepth = 1) => {
 ${categorizedAnimContents}
 `)
 }
+
+
+
+
+
+
+
+//
+//
+//
+// OTHER
+//
+//
+//
 
 const makeMapSpritesReadMe = async(rootPath, categoryPath, spritePath) => {
 	let readMeContent = '';
