@@ -1,9 +1,9 @@
-# [<escapeParentheses(weapon.unit.name)>](../) - <weapon.type> <DownloadButton("https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Klokinator/FE-Repo/tree/main/" + encodeURIComponent(weapon.path))> #
+# [<escapeParentheses(unit.name)>](../) - <weapon.type> <DownloadButton(weapon.path)> #
 
 | Static | Animated |
 | :---: | :-------: |
-| ![<weapon.type> static](<"./" + encodeURI(weapon.static)>) | ![<weapon.type> animated](<"./" + encodeURI(weapon.active)>) |
+| ![](<"./" + encodeURI(weapon.static)>) | ![](<"./" + encodeURI(weapon.active)>) |
 
-## Credit ##
+## Credits ##
 
-<weapon.unit.credits>
+<unit.credits>

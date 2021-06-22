@@ -6,6 +6,7 @@ const DEFAULT_DATA = {
         return string.replace(/(?=[()\[\]])/g, "\\")
     },
     "DownloadButton": function(url) {
+        url = "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Klokinator/FE-Repo/tree/main/" + encodeURIComponent(url)
         return "[![Download](https://img.shields.io/badge/Download--red?style=social&logo=github)](" + url + ")"
     }
 }
@@ -29,11 +30,11 @@ const DEFAULT_DATA = {
 // }
 
 const template = `
-# [<escapeParentheses(unit.name)>](../) - <weapon.type> <DownloadButton("https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Klokinator/FE-Repo/tree/main/" + encodeURIComponent(weapon.path))> #
+# [<escapeParentheses(unit.name)>](../) - <weapon.type> <DownloadButton(weapon.path)> #
 
 | Static | Animated |
 | :---: | :-------: |
-| ![<weapon.type> static](<"./" + encodeURI(weapon.static)>) | ![<weapon.type> animated](<"./" + encodeURI(weapon.active)>) |
+| ![](<"./" + encodeURI(weapon.static)>) | ![](<"./" + encodeURI(weapon.active)>) |
 
 ## Credit ##
 
